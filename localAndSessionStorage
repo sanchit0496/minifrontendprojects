@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and Session Storage</title>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+
+<script>
+
+    //local storage
+    let items = ['Tom', 'Jerry', 'Spike', 'Nibble'];
+    localStorage.setItem("name", "Mohit");
+    localStorage.setItem("name1", "Myra");
+    localStorage.setItem("cartoons", JSON.stringify(items));
+
+    // localStorage.removeItem("name");
+    // localStorage.clear();
+    let b = JSON.parse(localStorage.getItem("cartoons"));
+    console.log(b);
+    // localStorage.clear();
+
+    //session storages
+    let items = ['Tom', 'Jerry', 'Spike', 'Nibble'];
+    sessionStorage.setItem("name", "Mohit");
+    sessionStorage.setItem("name1", "Myra");
+    sessionStorage.setItem("cartoons", JSON.stringify(items));
+
+    // localStorage.removeItem("name");
+    // localStorage.clear();
+    let b = JSON.parse(sessionStorage.getItem("cartoons"));
+    console.log(b);
+
+</script>
+
+</html>
