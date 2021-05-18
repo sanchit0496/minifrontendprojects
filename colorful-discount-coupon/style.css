@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+body{
+  background-color:#fafcc2;
+/*   #fafcc2 */
+  font-family: 'Work Sans', sans-serif;
+}
+.coupon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-width: 4px;  
+  border-style: dotted;
+  border-color:brown;
+  width: 53vh;
+  height: 90vh;
+  border-radius: 5px;
+}
+.about{
+  padding: 1vh;
+  display:flex;
+  flex-direction: row;
+  color:black;
+  text-shadow: 2px 2px white;  
+  background-color:#ffd57e;
+    border-bottom: 4px solid #f08a5d;
+
+}
+.logo{
+  font-size: 6vh;
+  padding: 1vh;
+}
+.name{
+  font-weight: 600;
+  font-size: 3.5vh;
+  margin-left: 2vh;
+  margin-top: 2vh;
+}
+.pic{
+  background-color:#ffd57e;
+}
+.of{
+  background-color:#ffd57e;
+  font-size: 5vh;
+  padding: 2vh;
+  height: 5vh;
+  padding-left: 2vh;
+  border-bottom: 4px solid #f08a5d;
+}
+.in{
+  background-color:#ffefa0;
+  padding: 2vh;
+  height: 16vh;
+   border-bottom: 4px solid #f08a5d;
+}
+.footer{
+  background-color:#ffaa71;
+  height: 7.5vh;
+  padding: 1.8vh
+}
+.valid{
+  color:red;
+  margin-top: 1.5vh;
+  font-weight: 600;
+}
