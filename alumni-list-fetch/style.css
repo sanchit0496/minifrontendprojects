@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+background: hsla(213, 13%, 64%, 1);
+	font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    font-family: serif;
+    font-size: 2.9em;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+ul{
+  width: 100%;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;  
+}
+li{
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+      align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);      
+      margin: 4vh;
+      height: 40vh;
+      padding: 5vh;
+      background-color: whitesmoke;
+}
+span {
+        font-family: serif;
+        font-size: 1.5em;
+        margin-top: 4vh;
+        color: #3f3f3f;
+        text-align: center;
+ }
+img {
+        margin: 6px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.1); 
+}
+
+ 
