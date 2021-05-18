@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Rasa:wght@500&display=swap');
+
+*{
+  margin:0;
+ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+body{  
+  height: 100%;
+  width:100%;
+  font-family: Arial , serif;
+  background-color: #F0F2F5;
+}
+img 
+{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width:100%;
+  height:100vh;
+}
+.fade 
+{
+  -webkit-animation-name: fade-image;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade-image;
+  animation-duration: 2.5s;
+}
+  
+@-webkit-keyframes fade-image
+{
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+  
+@keyframes fade-image
+{
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+
+.navbar{
+  display:flex;
+  flex-direction:row;
+  z-index:10;
+  position:absolute;
+  padding:1.5vh;
+}  
+li{
+  list-style:none;
+  color:white;
+  font-weight:600;
+  font-size: 18px;
+  border-bottom: 2.5px solid transparent;
+  margin:10px;
+  padding:5px;
+}
+li:hover{
+  border-bottom: 2.5px solid white;
+  cursor:pointer;
+}
+
+.more{
+  position: absolute;
+  z-index:10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px;
+  cursor:pointer;
+  background:transparent;
+  opacity: 0.8;
+  border-radius:10px;
+  border:none;
+  color:white;
+  border: 2px solid white;
+}
+.more:hover{
+  background-color:whitesmoke;
+  color:black;
+}
+.header{
+  margin-top:8vh;
+  padding-bottom: 5vh;
+text-align:  center;
+}
+.pallete{
+  margin-top:10vh;
+  display:flex;
+  flex-direction:row;
+  margin-left:10vh;
+  margin-right:10vh;
+}
+.pallete i{
+  font-size: 10vh;
+}
+.item{
+  margin-left:auto;
+  margin-right:auto;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:2.5vh;
+  color: #4169E1;  
+}
+.itemhead{
+  font-size: 1.2rem;
+  padding:1rem;
+}
+.itemabout{
+  text-align:center;
+}
+.activities{
+  margin-top:10vh;
+  display:flex;
+  flex-direction:row;
+  padding-left:10vh;
+  padding-right:10vh;
+}
+.activities1{
+  margin-top:10vh;
+  display:flex;
+  flex-direction:row;
+  padding-left:10vh;
+  padding-right:10vh;
+}
+.acpic{
+  width:50%;
+}
+.acpic1{
+   width:50%;
+  padding-left:10vh;
+  padding-top:2vh;
+}
+.acinfo{
+  width:50%;
+  padding-left:10vh;
+  padding-top:2vh;
+}
+.acinfo1{
+  width:50%;
+  margin-top:3.5vh;
+}
+
+.acpic img{
+  height:49vh; 
+  border-radius:5px;
+}
+.acpic1 img{
+  height:49vh; 
+  border-radius:5px;
+}
+.moreactivity{
+    color: black;
+    background-color: white;
+    margin-top: 5vh;
+    padding: 1.5vh;
+    border-radius: 5px;
+    border: 2px solid #5588ff;
+    font-weight: 600;
+    cursor: pointer
+}
+.destinations{
+  display:flex;
+  flex-direction:column;  
+  margin-left:15vh;
+  margin-right:15vh;
+}
+.r1{
+  display:flex;
+  flex-direction:row;
+}
+.r2{
+  display:flex;
+  flex-direction:row;
+}
+.d11 img{
+  height: 50vh;
+  width:100%;
+  border-radius: 5px;
+}
+.d11{
+    margin:2.5vh;
+}
+.d12{
+    margin:2.5vh;
+}
+.d12 img{
+  height: 50vh;
+  width:100%;
+  border-radius: 5px;
+}
+.d21 img{
+  height:35vh;
+  width: 100%;
+  border-radius: 5px;
+}
+.d22 img{
+  height:35vh;
+  width: 100%;
+  border-radius: 5px;
+}
+.d23 img{
+  height:35vh;
+  width: 100%;
+  border-radius: 5px;
+}
+.d21{
+    margin:1.5vh;
+}
+.d22{
+    margin:1.5vh;
+}
+.d23{
+    margin:1.5vh;
+}
+.d11:hover, .d12:hover, .d21:hover, .d22:hover, .d23:hover{
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  cursor:pointer;
+}
+
+.container1{
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+.contactform{
+  margin-left: 15vh;
+  margin-right: 15vh;
+  display: flex;
+  flex-direction:row;
+}
+.banner{
+  width: 50%;
+}
+.banner img{
+  height: 45vh;
+  border-radius: 5px;
+}
+.form{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10vh;
+  width: 50%;
+}
+label{
+  margin-bottom: 1vh;
+}
+input{
+  margin-bottom: 1vh;
+  padding: 1vh;
+}
+footer{
+  margin-top: 25vh;
+  color:white;
+  background-color:black;
+  display: flex;
+  flex-direction: row;
+}
+.list{
+  width: 65%;
+  padding: 8vh;
+}  
+table{
+  margin-left: 15vh;
+  margin-top: 2vh;
+}
+td{
+  padding: 1vh;
+  width: 31vh;
+}
+.subs{
+  padding-top: 10.5vh;
+  width: 35%;
+}
+.subsinput{
+  border: none;
+  padding: 1.8vh;    
+}
