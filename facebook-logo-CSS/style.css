@@ -1,0 +1,25 @@
+body {
+    background: lightgrey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .outer{ 
+    background-color: #43609C;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height:15rem;
+    width:15rem;
+  }
+  .letter{  
+    font-family: Facebook Letter Faces, Arial;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:15rem;
+    font-weight:600;
+    color:white;
+    margin-top:2.3rem;
+    margin-left:1.8rem;
+  }
