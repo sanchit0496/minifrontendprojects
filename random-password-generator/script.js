@@ -1,53 +1,49 @@
-window.onload = displayClock();
-window.onload = displayDates();
+function randomString(){
 
+var alphabet = document.getElementById('alphabet').value;
+var specialch = document.getElementById('specialch').value;
+var num = document.getElementById('num').value;
 
-function displayClock(){
-    var d = new Date();
-    var hour = d.getHours();
-    var minute = d.getMinutes();
-    var second = d.getSeconds();
+var a = parseInt(alphabet);
+var b = parseInt(specialch);
+var c = parseInt(num);
 
-    // console.log(typeof(hour));
-    // console.log(minute);
-    // console.log(second);
+var length = a + b + c;
+  
 
-    if(hour < 10){ 
-      document.getElementById('h').innerHTML = "0" + hour;
+      if(Number.isNaN(a) && Number.isNaN(b) && Number.isNaN(c)){
+        document.getElementById("input1").innerHTML = "Please enter atleast one numerical value to continue";
     }else{
-     document.getElementById('h').innerHTML = hour;  
+        document.getElementById('input1').innerHTML =  "";
     }
+  
+  var characters = "ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";  
+var specialcharacters = "!@#$%^&*()_+";
+  var numbers = "1234567890";
+  
+  var len1 = alphabet;  
+  var len2 = specialch;
+  var len3 = num;
+  var randomString = "";
+  
+  for(var i = 0; i < len1; i++){
+    var ch = Math.floor(Math.random() * characters.length);
+    randomString = randomString + characters.substring(ch, ch+1);
+  }
+  
+  for(var i = 0; i < len2; i++){
+    var ch = Math.floor(Math.random() * specialcharacters.length);
+    randomString = randomString + specialcharacters.substring(ch, ch+1);
+  }
+  
+  for(var i = 0; i < len3; i++){
+    var ch = Math.floor(Math.random() * numbers.length);
+    randomString = randomString + numbers.substring(ch, ch+1);
+  }
+       let shuffleString = randomString.split('').sort(function(){return 0.5-Math.random()}).join('');
 
-    if(minute < 10){ 
-      document.getElementById('m').innerHTML = "0" + minute;
-    }else{
-     document.getElementById('m').innerHTML = minute;  
-    }
 
-    if(second < 10){ 
-      document.getElementById('s').innerHTML = "0" + second;
-    }else{
-     document.getElementById('s').innerHTML = second;  
-    }
-  window.setInterval(displayClock, 1000);
-}
-
-
-function displayDates(){
-
-  var dateObj = new Date();
-  var date = dateObj.getDate()
-  var month = dateObj.getUTCMonth();
-  var day = dateObj.getDay();
-  var year = dateObj.getUTCFullYear();
-
-const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
-];
-const dayName = ["Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-   document.getElementById('day').innerHTML = date;
-   document.getElementById('month').innerHTML = monthNames[month];
-   document.getElementById('year').innerHTML = year;
-   document.getElementById('dayname').innerHTML = dayName[day];
+      document.getElementById("string").innerHTML = shuffleString;
+  
   
 }
