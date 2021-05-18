@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+.container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.body{
+  height:50vh;
+  width:35vh;
+  background: rgb(13,245,237);
+background: radial-gradient(circle, rgba(13,245,237,1) 40%, rgba(10,143,159,1) 80%);
+  border-radius:70px 90px 45px 65px;
+  transform:skewX(-8deg);
+  border:12px solid black;
+}
+.wiser{
+background: rgb(157,198,215);
+background: radial-gradient(circle, rgba(157,198,215,1) 15%, rgba(78,99,107,1) 122%);
+  height:15vh;
+  width:30vh;
+  border-radius:185px;
+  border:12px solid black;
+  margin-top:-37vh;
+  margin-left:20vh;
+  z-index: 1;
+  position:relative;
+}
+.bag{
+  background-color:#0df5ed;
+  height:30vh;
+  width:15vh;
+  margin-left:-40vh;
+  margin-top:-45vh;
+  border-radius:50px 50px 50px 50px;
+  transform:skewX(-4deg);
+  border:12px solid black;
+  position:relative;
+  z-index:-1;
+  background: rgb(13,245,237);
+background: radial-gradient(circle, rgba(13,245,237,1) 40%, rgba(10,143,159,1) 80%);
+}
+.leg{
+  background-color:white;
+  height:3.98rem;
+  width:10vh;
+  margin-top:15vh;
+  z-index:1;
+  border-top:12px solid black;  
+  border-left:12px solid black;  
+  border-right:12px solid black;
+  border-radius:25px 25px 5px 5px;
+}
+
+.amongus{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.amongus{
+  font-family: 'Neucha', cursive;
+font-size:18vh;
+  color:white;
+  padding:5vh;
+  font-weight:600;
+}
+body{
+    background-image: linear-gradient(to bottom, #e8e6df 5%, white);
+  height:97vh; 
+}
