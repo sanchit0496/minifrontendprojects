@@ -1,0 +1,46 @@
+body {
+    background: #2A2F4F;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .outer{ 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: radial-gradient(
+      circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 85%,
+    #515ecf);
+    height:25rem;
+    width:25rem;
+    border-radius: 30%;
+    position:relative;
+  }
+  .inner{ 
+    position:absolute;
+    border-radius:90px;
+    border: 20px solid white;
+    height:16rem;
+    width:16rem;
+    margin: 13.5%;
+  }
+  .dot{
+    height:2rem;
+    width:2rem;
+    border-radius:50%;
+    position:absolute;
+    margin-top:25%;
+    margin-left:60%;
+    background-color:white;
+  }
+  .circle{ 
+    height:5rem;
+    width:5rem;
+    border-radius:50%;
+    position:absolute;
+    margin-top:37%;
+    margin-left:37%;
+    border:20px white solid;
+  }
