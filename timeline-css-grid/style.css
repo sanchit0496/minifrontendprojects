@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+*{
+  margin:0;
+}
+
+.container{
+  margin-top:1em;
+  display:grid;
+  grid-gap:4px;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+}
+/* .grid1,.grid2,.grid3,.grid4,.grid5{
+  border:1px solid black;
+} */
+.grid1{
+  background-color:white;
+  grid-row:1/7;
+  grid-column:1/6;
+  width:100%;
+  height:100%;
+}
+
+.grid2{
+  background-color:white;
+  grid-row:7/13;
+  grid-column:1/6;
+}
+
+.grid3{
+  background-color:white;
+  grid-row:1/13;
+  grid-column:6/7;
+}
+.grid4{
+  background-color:white;
+  grid-row:1/7;
+  grid-column:7/13;
+}
+.grid5{
+  background-color:white;
+  grid-row:7/13;
+  grid-column:7/13;
+}
+
+.bar{
+  background-color:#FFD700;
+  width:5px;
+  height:90vh;
+  margin-left:48%;
+}
+.header{
+  background-color: #FFD700;
+  padding:15px;
+}
+h1{
+  font-family: 'Staatliches', cursive;
+  text-align:center;
+}
+.card{
+  border: 2px  solid purple;
+  padding:2px;
+  margin:10px;
+}
+.card_title{
+  font-family: 'Staatliches', cursive;
+  background-color: #FFD700;
+  padding:5px;
+}
+.card_content{
+  padding:10px;
+  font-family: 'PT Serif', serif;
+  font-size:10px;
+}
