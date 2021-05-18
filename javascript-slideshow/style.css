@@ -1,0 +1,36 @@
+*{
+    margin:0;
+  }
+  body{  
+    height: 100%;
+    width:100%;
+  }
+  img 
+  {
+    height: 100%;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:fixed;
+  }
+  
+  .fade 
+  {
+    -webkit-animation-name: fade-image;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade-image;
+    animation-duration: 1.5s;
+  }
+    
+  @-webkit-keyframes fade-image
+  {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+    
+  @keyframes fade-image
+  {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
