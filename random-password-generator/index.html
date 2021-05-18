@@ -8,28 +8,39 @@
     <title>Digital Clock</title>
 </head>
 <body>
-    <div class="container">
-        <h1>JavaScript Clock</h1>
-        
-        <div id="clock">
-          
-          <div id="h"></div>
-          <div class="span"> : </div>
-          <div id="m"></div>
-          <div class="span"> : </div>
-          <div id="s"></div>
-        
-        </div>
-        
-        <div id="date">
-          <div id="day"></div>
-          <div id="month"></div>
-          <div id="year"></div>
-          <div class="span1">:</div>
-          <div id="dayname"></div>
-        </div>
-          
-        </div>
+    
+    <h2>Random Password Generator using JavaScript</h2>
+<br><br>
+<div class="container">
+  
+  <table>
+  <tr>
+    <td><label for="alphabets">Alphabets</label></td>
+    <td><input type="text" id = "alphabet"></td>
+  </tr>
+    
+  <tr>
+    <td><label for="alphabets">Special Characters</label></td>
+    <td><input type="text" id = "specialch"></td>
+  </tr>
+    
+  <tr>
+    <td><label for="alphabets">Integers</label></td>
+    <td><input type="text" id = "num"></td>
+  </tr>
+</table>
+  
+    <div id="input1"></div>
+<!--     <div id="input2"></div>
+    <div id="input3"></div> -->
+
+    <input type="button" class="generate" value = "Click Here to Generate Password" onClick = "randomString();">
+      <div id="string"></div>
+    </div>
+
+</div>
+    
+    
         <script src="script.js"></script>
 </body>
 </html>
