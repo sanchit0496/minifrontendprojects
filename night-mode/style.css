@@ -1,0 +1,17 @@
+.test{
+    background-color:lightgrey;
+    height:95vh;
+    color:green;
+  }
+  .nightm{ 
+    background-color: black;
+    color:white;
+    height:95vh;
+  }
+  #night{
+    background-color:white;
+    border-radius:10px;
+    border: 2px solid black;
+    padding:5px;
+    cursor:pointer;
+  }
