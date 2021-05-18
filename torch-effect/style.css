@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+*{
+  margin: 0;
+}
+h4{
+  color:white;
+  font-family: 'Patua One', cursive;
+  font-size: 5vh;
+  padding: 5vh;
+  font-weight: 400;
+}
+body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:#000;
+}  
+.monument{
+  border: 10px solid lightgrey;
+  border-radius: 10px;
+  width: 115vh;
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url("https://images.pexels.com/photos/4566666/pexels-photo-4566666.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") center no-repeat;
+  background-size: cover;
+}
+.monument .torch{
+  width: 120vh;
+  height: 80vh;  background:url("https://images.pexels.com/photos/4566666/pexels-photo-4566666.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") center no-repeat;
+  background-size:cover;  
+  clip-path:circle(80px);
+}
