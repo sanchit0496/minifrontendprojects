@@ -1,76 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
-*{
-  font-family: 'Mukta', sans-serif;
-  font-weight: 600;
-}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 body{
-  background-color: #5eaaa8;
+  background-color:#fafcc2;
+/*   #fafcc2 */
+  font-family: 'Work Sans', sans-serif;
 }
-.container{
-  width: 80vh;
-  background-color:#d8ebe4;
-  padding: 5vh;
-  border-radius: 2vh;
-}
-.generate{
-  color: black;
-  background-color:white;
-  cursor:pointer;
-  border: 2px solid black;  
-  text-align: center;
-  margin-top: 5vh;
-  width: 67vh;
-}
-.generate:hover{
-  background-color: whitesmoke;
-}
-#string{
-  margin-top: 4vh;
-  border: 2px solid black;
-  width: 67vh;
-  font-size: 4vh;
-  text-align: center;
-  margin: auto;
-  height: 10vh;
-  background-color: rgb(228, 222, 222);
-  padding-top: 1.8vh;
-}
-h2{
-  text-align:center;
-  color: white;
-  font-weight: 600;
-  margin-top: 5vh;
-}
-.container{
+.coupon{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}  
-form{
-  display:flex;
-  flex-direction:column;
+  border-width: 4px;  
+  border-style: dotted;
+  border-color:brown;
+  width: 53vh;
+  height: 90vh;
+  border-radius: 5px;
 }
-.row1, .row2, .row3{
+.about{
+  padding: 1vh;
   display:flex;
   flex-direction: row;
-}
-table{
-  width: 100%;
-}
-label{
-  margin: 1.5vh;
-}
-input{
-  width: 25vh;
-  margin: 1.5vh;
-  padding:1vh;
-}
-#input1{
   color:black;
-  font-size: 14px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  height: 2vh;
+  text-shadow: 2px 2px white;  
+  background-color:#ffd57e;
+    border-bottom: 4px solid #f08a5d;
+
+}
+.logo{
+  font-size: 6vh;
+  padding: 1vh;
+}
+.name{
+  font-weight: 600;
+  font-size: 3.5vh;
+  margin-left: 2vh;
+  margin-top: 2vh;
+}
+.pic{
+  background-color:#ffd57e;
+}
+.of{
+  background-color:#ffd57e;
+  font-size: 5vh;
+  padding: 2vh;
+  height: 5vh;
+  padding-left: 2vh;
+  border-bottom: 4px solid #f08a5d;
+}
+.in{
+  background-color:#ffefa0;
+  padding: 2vh;
+  height: 16vh;
+   border-bottom: 4px solid #f08a5d;
+}
+.footer{
+  background-color:#ffaa71;
+  height: 7.5vh;
+  padding: 1.8vh
+}
+.valid{
+  color:red;
+  margin-top: 1.5vh;
+  font-weight: 600;
 }
