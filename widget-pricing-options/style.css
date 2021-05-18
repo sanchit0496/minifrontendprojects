@@ -1,0 +1,105 @@
+*{
+    background-color:#f7f7ff;
+  }
+  
+  body{
+    font-family: "Montserrat", sans-serif;
+    text-align:center;
+    color: hsl(233, 13%, 49%);
+  }
+  
+  #plans{
+    color: hsl(233, 13%, 49%);
+    border: 1px solid lightgrey;
+    width: 15vh;
+    padding: 2.5vh;
+    cursor:pointer;
+    margin-left: auto; 
+    margin-right: auto;
+    border-radius: 15px;
+  }
+  #plans:hover{
+    background-color: #8585e0;
+    color:white;
+  }
+  #info{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+  }
+  #pro{
+    box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+   height: 65vh; 
+    padding: 5vh;
+    background-color: #8585e0;
+    border-radius: 15px;
+  }
+  #free{
+      box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+    padding: 5vh;
+    border-radius: 15px;
+  }
+  #master{
+      box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+    padding: 5vh;
+    border-radius: 15px;
+  }
+  table{
+    text-align:left;
+  }
+  td{
+    padding: 2vh;
+  }
+  #one{
+    border-top: 1px solid lightgrey;  
+  }
+  #two{
+    border-top: 1px solid lightgrey;  
+  }
+  #th{
+      border-top: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey;
+  }
+  .protab{
+    margin-left:20px;
+     background-color: #8585e0;
+  }
+  #pro h1{
+    background-color:inherit;
+    color:white;
+  }
+  #pro h3{
+    background-color:inherit;  
+    color:white;
+  }
+  .protab td{
+    background-color: #8585e0;
+    color:white;
+  }
+  .more{
+    margin-top:5vh;
+    padding:2vh;
+    border: 1px solid lightgrey;
+    cursor:pointer;
+  }
+  h3{
+    color: hsl(232, 13%, 33%);
+  }
+  h1{
+    color: hsl(232, 13%, 33%);
+  }
+  button{
+    width:90%;
+    border-radius: 5px;
+    background-color: #8585e0;
+    color:white;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  #pro button{
+    background-color: white;
+    color: #8585e0;
+  }
+  #info{
+    margin-top:5vh;
+  }
