@@ -1,0 +1,94 @@
+*{
+    background-color: #F0F2F5;
+    font-family: Facebook Letter Faces, Arial;
+  }
+  .container{
+     margin-top:8rem;  
+    display:flex;
+    flex-direction:row;
+  }
+  .fb{
+    font-family: Facebook Letter Faces, Arial; 
+    color: #1877f2; 
+    font-size:4rem; 
+    font-weight:600;
+  }
+  .fbinfo{
+    font-family: Facebook Letter Faces, Arial; 
+    color: black; 
+    font-size:1.4rem; 
+    font-weight:400;
+  }
+  .part1{
+    padding:2rem;
+    width:50%;
+    margin-left:8%;
+  }
+  .part2{
+    padding:2rem;
+    margin: auto;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+  }
+  .box{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    text-align: center;
+    background-color:white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);  
+    padding:10px;
+    background-color:white;
+  }
+  .box input{ 
+    border-radius:10px;
+    font-size:16px;
+    width:85%;
+    margin:8px;
+    padding:15px;
+    border: 1px solid #dddfe2;
+    background: #FFFFFF;
+  }
+  .loginbtn{
+    background-color:#1877f2; 
+    color:white;
+    width:90%;
+    margin:8px;
+    padding:15px;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+   font-weight:600;
+    cursor:pointer;
+  }
+  .newac{
+    background-color:#42b72a;
+    border:none;
+    padding:15px;
+    color:white;
+    font-weight:600;
+    font-size:16px;
+    margin:10px;
+    border-radius:5px;
+    cursor:pointer;
+  }
+  hr.solid {
+    border-top: 1px solid #dddfe2;
+    margin:15px;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+  
+    .container{
+      margin-top:8rem;  
+      display:flex;
+      flex-direction:column;
+    }
+    .part1{
+      margin-left:15%;
+      width:70%;
+      margin-right:15%;
+    }
+  }
