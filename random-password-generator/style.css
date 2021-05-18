@@ -1,44 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-h1{
-  font-family: 'Orbitron', sans-serif;
-  color: #39FF14;
-  align-items:center; 
-  text-align:center;
-  font-size: 8vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
 *{
-  background-color:black;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
+}
+body{
+  background-color: #5eaaa8;
+}
+.container{
+  background-color:#d8ebe4;
+  padding: 5vh;
+  border-radius: 2vh;
+}
+.generate{
+  color: black;
+  background-color:white;
+  cursor:pointer;
+  border: 2px solid black;  
+  text-align: center;
+  margin-top: 5vh;
+  width: 96%;
+}
+.generate:hover{
+  background-color: whitesmoke;
+}
+#string{
+  margin-top: 4vh;
+  border: 2px solid black;
+  width: 65vh;
+  font-size: 4vh;
+  text-align: center;
+  padding: 2.5vh;
+}
+h2{
+  text-align:center;
+  color: white;
+  font-weight: 600;
 }
 .container{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-#clock{
+}  
+form{
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
 }
-
-#h, #m, #s, .span{
-  color: #39FF14;
-  font-size: 14vh;
-  font-family: 'Orbitron', sans-serif;
-  padding: 2vh;
-}
-#day, #month, #year, #dayname{
-  padding: 2vh;
-  font-size: 5vh;
-  font-family: 'Orbitron', sans-serif;
-}
-#date{
-  color:#39FF14
-;
+.row1, .row2, .row3{
   display:flex;
   flex-direction: row;
 }
-.span1{
-  font-size: 5vh;
-  font-family: 'Orbitron', sans-serif;
-  padding: 2vh;
+table{
+  width: 100%;
+}
+label{
+  margin: 1.5vh;
+}
+input{
+  width: 25vh;
+  margin: 1.5vh;
+  padding:1vh;
+}
+#input1{
+  color:black;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 2vh;
 }
