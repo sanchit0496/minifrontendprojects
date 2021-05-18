@@ -7,66 +7,6 @@
     <title>Number Guesser</title>
 </head>
 
-<style>
-    body{
-        background-color: rgb(206, 222, 241);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    .header{
-        text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    #app{
-       align-items: center;
-       text-align: center;
-       box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-       background-color: white;
-       margin-top: 15vh;
-       width: 40%;
-       margin-left: auto;
-       margin-right: auto;
-       padding: 15vh;
-    }
-    #user{
-        padding: 1.5vh;
-        border: 2px solid black;
-        border-radius: 4px;
-        width: 90%;
-    }
-    #btn{
-        padding: 1.5vh;
-        border: 2px solid black;
-        border-radius: 4px; 
-        cursor: pointer;
-        margin-top: 2vh;
-        width: 80%;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    button{
-        padding: 1.5vh;
-        border: 2px solid black;
-        border-radius: 4px; 
-        cursor: pointer;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    #relo{
-       align-items: center;
-       text-align: center;
-       box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-       background-color: white;
-       margin-top: 10vh;
-       width: 40%;
-       margin-left: auto;
-       margin-right: auto;
-       padding: 15vh;  
-       visibility: hidden;      
-    }
-    #guess{
-        text-align: left;
-        font-size: 1rem;
-    }
-</style>
-
 <body>
     <div class="header">
         <h1>Number Guesser</h1>
@@ -82,41 +22,6 @@
 
     <div id="relo"></div>
 
-    <script>
-        document.getElementById('btn').addEventListener('click', compare);
-
-        let guess = 1;
-        document.getElementById('guess').innerHTML = "Guesses Left: " + guess;
-
-        function compare(){
-
-            let comp = Math.floor(Math.random() * 10) + 1;
-            let human = document.getElementById('user').value;
-            
-            if(comp == human){
-                document.getElementById('result').innerHTML = 'Similar';
-            }else{
-                document.getElementById('guess').innerHTML = guess-1;
-                guess = guess -1;
-                document.getElementById('result').innerHTML = 'Different';
-                if(guess == 0){
-                    document.getElementById('app').remove();
-                    document.getElementById('relo').style.visibility = 'visible'; 
-
-                    document.getElementById('relo').innerHTML = `
-                    <h2> You ran out of guesses! </h2>  <br>
-                    <button onclick = 'location.reload()'>Click Here To Play Again</button>
-                    `;
-                }
-            }
-          
-        }
-
- 
-    </script>
-
 </body>
-
-
 
 </html>
