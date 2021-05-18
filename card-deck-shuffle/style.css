@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Reggae+One&display=swap');
+
+h1{
+  font-family: 'Reggae One', cursive;  
+  color:white;
+  text-align:center;
+}
+
+*{
+  background: #2A2F4F;
+}
+img{
+  height:25rem;
+  width:15rem;
+}
+#deck{
+  cursor:pointer;
+  position:absolute;
+  margin: 0;
+  top: 25%;
+  left: 40%; 
+  transform: translate(-50%, -50%);
+  z-index:100;
+}  
+#card1{
+/* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+/*   border: 5px solid white; */
+/*   height: 25rem;
+  width:15rem; */
+  transform: rotate(5deg);
+  z-index:10;
+  position: absolute;
+}
+#card2{
+  position: absolute;
+/*   border: 5px solid grey; */
+/*   height: 25rem;
+  width:15rem; */
+  transform: rotate(-5deg);
+  z-index:9;
+/*   background-color: #4158D0; */
+/*   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+}
+#card3{
+  position: absolute;
+/*   border: 5px solid lightgrey; */g
+/*   height: 25rem;
+  width:15rem; */
+  transform: rotate(15deg);
+  z-index:8;
+/*   background-color: #85FFBD; */
+/*   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+}
+.card11{
+  animation: firstcard 3s;
+  animation-direction:infinite;
+}
+.card22{
+  animation: second 1.5s;
+  animation-direction:infinite;
+  animation-delay:2s;
+}
+.card33{
+  animation: third 1.5s;
+  animation-direction:infinite;
+  animation-delay:2.5s;
+}
+
+
+@keyframes firstcard{
+  0%{
+    opacity:0.8;
+  }
+  25%{
+      transform: translate(280px, 0);
+  }
+  50%{
+      transform: translate(-50px, 0);
+  }
+  100%{
+       z-index:-1;
+  }
+}
+
+@keyframes second{
+  0%{
+    opacity:0.8;
+  }
+  25%{
+      transform: translate(250px, 0);
+  }
+  50%{
+      transform: translate(-50px, 0);
+  }
+  100%{
+       z-index:-10;
+  }
+}
+
+@keyframes third{
+  0%{
+    opacity:0.8;
+  }
+  25%{
+      transform: translate(250px, 0);
+  }
+  50%{
+      transform: translate(-50px, 0);
+  }
+  100%{
+       z-index:-15;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  #deck{
+   margin-left:-10%;
+  }
+}
