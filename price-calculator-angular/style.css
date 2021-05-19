@@ -1,0 +1,47 @@
+body{
+  background: rgba(12,141,240,0.7) !important;
+}
+h1{
+  font-size:30px;
+  margin-bottom:58px;
+  font-family: 'Lato', sans-serif;
+}
+h5{
+  font-family: 'Lato', sans-serif;
+  font-size:21px;
+}
+
+.quan, .serv, .prc{
+  width:100%;
+  padding:2.5px;
+}
+span{
+  font-size:14px;
+}
+.app{
+  border-radius:20px;
+  border:1px solid white;
+  margin:5% 10% 5% 10%;
+  padding:5%;
+  background-color:whitesmoke;
+}
+option{
+  margin:10px;
+}
+p{
+  font-weight:600;
+  font-size:14.5px;
+}
+span{
+  font-weight:600;
+  font-size:16px;
+}
+.entered{
+  margin-left:20%;
+}
+.total{
+  font-size:26px;
+  margin-top:5%;
+  margin-bottom:-4%;
+  margin-left:62%;
+}
