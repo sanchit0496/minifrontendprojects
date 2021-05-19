@@ -19,7 +19,7 @@ body{
     margin:20px;
     width:60%;
     border-radius:5px;
-    margin-left:20%;
+    margin-left:20% !important;
     font-size:90%;
     height:80px;
     padding:10px;
