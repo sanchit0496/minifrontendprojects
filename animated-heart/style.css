@@ -1,0 +1,123 @@
+$body-color: #fcc;
+$heart-color: #bd2222;
+$circle-color: #ff8a80;
+
+body {
+  background: $body-color;
+  height: 100%;
+
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    .first-name {
+      span {
+        padding: 1rem;
+        font-family: "Cedarville Cursive", cursive;
+        font-size: 5rem;
+        letter-spacing: 0.15rem;
+        color: $heart-color;
+      }
+    }
+
+    .last-name {
+      span {
+        padding: 1rem;
+        font-family: "Cedarville Cursive", cursive;
+        font-size: 5rem;
+        letter-spacing: 0.15rem;
+        color: $heart-color;
+      }
+    }
+
+    .heart {
+      position: relative;
+      height: 13rem;
+      width: 13rem;
+      background: $circle-color;
+      border-radius: 50%;
+      animation: pulse 2s linear infinite;
+
+      span {
+        position: absolute;
+        color: $body-color;
+        font-family: "Cedarville Cursive", cursive;
+        font-size: 1.2rem;
+        letter-spacing: 0.15rem;
+        z-index: 2;
+        top: 5.5rem;
+        left: 4.2rem;
+        opacity: 0;
+
+        &:hover {
+          animation: apear 5s ease;
+        }
+      }
+
+      .right-heart {
+        position: absolute;
+        right: 3.2rem;
+        top: 2.8rem;
+        height: 55%;
+        width: 30%;
+        border-radius: 90% 100% 0 90%;
+        background: $heart-color;
+        transform: rotate(45deg);
+      }
+
+      .left-heart {
+        position: absolute;
+        left: 3.5rem;
+        top: 2.9rem;
+        height: 55%;
+        width: 30%;
+        border-radius: 100% 90% 90% 0;
+        background: $heart-color;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.5;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0.5;
+  }
+
+  80% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

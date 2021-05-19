@@ -1,0 +1,1 @@
+Install SCSS to make the project work
