@@ -1,0 +1,36 @@
+h1{
+  margin:2% 4% -2% 5%;
+  font-size:280%;
+ }
+ .col{
+   margin:10px;
+   font-weight:600;
+ }
+ .info{
+   background-color:white;
+ }
+ .col-6{
+   border:1px solid black;
+ }
+ .info{
+   margin:4% !important;
+ }
+ input{
+   font-size:14px;
+   padding:2px;
+ }
+ body{
+   background-color:#ef8484 !important;
+ }
+ .speech{
+   padding:40px;
+   font-family: 'Handlee', cursive;
+   font-size:105%;
+   background-color:lightgoldenrodyellow;
+   margin:35px;
+   border-radius:20px;
+ }
+ textarea{
+   max-height:240%;
+   font-size:80%;
+ }

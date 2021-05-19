@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular.min.js" integrity="sha512-Bv/7njhHm3tTihIuFpbJW5LJpKAssVEMnVO5oEI74r6wCV8tTtcXZqm546kdEojpPq1w/zrt6dlQojxlSaBN9w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Satisfy" rel="stylesheet">
+
+<body>  
+
+  <h1>Introduce Yourself - Angular JS</h1>
+
+<div ng-app="myApp" ng-controller="myCtrl" ng-init="firstName='Sanchit'; lastName = ''; compName = 'Cognizant Technology Solutions'; desgName='PAT'; dojName ='September 2019'; stName = 'Patna, Bihar'; ctName = 'India'; msgName='This codepen has been created by Sanchit (@sanchit0496). This single page application helps in creating an introduction speech for the user. The user just have to input the required details in the respective columns. You can go ahead and change the contents in the Text boxes to change the content in the Letter. How did I do it? Angular JS.'; ">
+
+<div class="row info">
+  <div class="col-6">     
+    <center><p style="margin:20px;font-size:105%; font-weight:600;"> Enter Your Information Here</p></center>
+    <br>
+    
+  <div class="container">
+  <div class="row">
+    
+    <div class="col">First Name</div>
+    <div class="col"><input placeholder="First Name" type="text" ng-model="firstName">
+    </div>
+    
+    <div class="w-100"></div>
+    <div class="col">Last Name</div>
+    <div class="col"><input placeholder="Last Name" type="text" ng-model="lastName">
+    </div>
+  </div>
+  </div>
+      <div class="container">
+  <div class="row">
+    <div class="col">Company Name</div>
+    <div class="col"><input placeholder="Company" type="text" ng-model="compName"></div>
+    
+    <div class="w-100"></div>
+    <div class="col">Designation</div>
+    <div class="col"><input placeholder="Designation" type="text" ng-model="desgName"></div>
+  </div>
+  </div>
+      
+      <div class="container">
+  <div class="row">
+    <div class="col">Date of Joining</div>
+    <div class="col"><input placeholder="Date of Joining" type="text" ng-model="dojName"></div>
+    
+    <div class="w-100"></div>
+    <div class="col">State</div>
+    <div class="col"><input placeholder="State" type="text" ng-model="stName"></div>
+  </div>
+  </div>
+      
+      <div class="container">
+  <div class="row">
+    <div class="col">Country</div>
+    <div class="col"><input placeholder="Country" type="text" ng-model="ctName"></div>
+    
+    <div class="w-100"></div>
+    <div class="col">Your Message</div>
+    <div class="col" style="margin-bottom:20%;"><textarea placeholder="Message" type="text" style ="height:450%; width:100%;" ng-model="msgName"></textarea></div>
+  </div>
+  </div>
+    </div>
+    
+    <div class="col-6">
+      
+      <center><p style="margin:20px;font-size:105%; font-weight:600;"> Your Introduction Speech Here</p></center>
+      
+      <div class="speech">
+      Good Morning! <br><br>
+        My name is {{firstName}} {{lastName}}. <br> Currently, I am working as an {{desgName}} at '{{compName}}'. I joined the company in the month of {{dojName}}. I completed my high school education from {{stName}},{{ctName}}. <br><br>
+        At last I'd like to conclude by saying that, "{{msgName}}".  <br><br> Thank You
+      </div>
+      
+      </div>
+  </div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+  </body>  
+</html>  
