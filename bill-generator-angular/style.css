@@ -1,0 +1,51 @@
+#all{
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:5%;
+    margin-bottom:5%;
+    background:linear-gradient(lightblue      80%,white);
+  }
+  body{
+    background:linear-gradient(lightblue      80%,white);
+  }
+  .info{
+    background-color:whitesmoke;
+    padding:2.5%;
+    padding:5%;
+    border-radius:15px;
+  }
+  .bill{
+    background-color:#faeabe;
+    margin-left:20%;
+    margin-right:20%;
+    border: 2px dotted black;
+    padding:4%;
+  }
+  span{
+    font-size:85%;
+  }
+  select{
+    width:80%;
+    font-size:90%;
+    margin:2.5px;
+    padding:3px;
+  }
+  input{
+    margin:2.5px;
+    width:50%;
+  }
+  .hi{
+    font-size:14px;
+    margin-top:5px;
+    margin-bottom:-15px;
+  }
+  li{
+    font-size:90%;
+  }
+  .msg{
+    font-size:105%;
+    font-family:monospace;
+    margin-left:60%;
+  }
+  
+  

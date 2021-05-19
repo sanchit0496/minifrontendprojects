@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular.min.js" integrity="sha512-Bv/7njhHm3tTihIuFpbJW5LJpKAssVEMnVO5oEI74r6wCV8tTtcXZqm546kdEojpPq1w/zrt6dlQojxlSaBN9w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <title>Bill Generator using Angular</title>
+</head>
+<body>
+    <div id="all">
+    <div class="app" ng-app="myApp" ng-controller="myCtrl">
+  
+        <div class = "info">
+      
+        <center><h1>Bill Generator - Angular JS</h1></center><br><br>
+        
+        <h5>Enter your Personal Details</h5><br>
+        
+        <div class="row">
+        
+        <div class="col-6 cuin">
+          <div class = "hi">Name</div><br>
+          <div class="hi">Age</div><br>                                     <div class="hi">Mobile Number</div><br>
+          <div class="hi">Email ID</div><br>
+          <div class="hi">Address</div><br>
+          <div class="hi">Select Mode of Payment</div>
+        </div>
+          
+        <div class="col-6">
+          <input type="text" ng-model="name"><br>
+          <input type="text" ng-model="age"><br>
+          <input type="text" ng-model="mobno"><br>
+          <input type="text" ng-model="emailid"><br>
+          <input type="text" ng-model="address"><br>
+      <form>
+      <select style="width:50%;" ng-model="modep">
+        <option value="cash">Cash</option>
+        <option value="cc">Credit Card</option>
+        <option value="dc">Debit Card</option>
+        <option value="wl">e-Wallet</option>
+      </select>
+      </form>    
+          </div>
+          
+      </div>
+        <br><br>
+        <h5>Item Bucket</h5><br>
+        
+        <div class="row">
+          
+        <div class="col-6 col-md-4">
+           <div class="hi">Protein Powder</div><br>
+           <div class="hi">BCAA</div><br>
+           <div class="hi">Fish Oil</div><br>
+           <div class="hi">Multi Vitamins</div><br>
+           <div class="hi">Fat Burner</div><br>
+      
+          
+        </div>
+          
+        <div class="col-6 col-md-4">
+          
+         <form>
+      <select class="quan" ng-model="prod1">
+        <option value="Muscle Blaze Gold Edition - Rs.2000">Muscle Blaze Gold Edition - Rs.2000</option>
+        <option value="ON Nutrition - Rs.1800">ON Nutrition - Rs.1800</option>
+        <option value="Muscle Tech Whey Protein - Rs.2500">Muscle Tech Whey Protein - Rs.2500 </option>
+        <option value="AsItIs Raw - Rs.800">AsItIs Raw - Rs.800</option>
+        <option value="Prostar Whey 100% - Rs.3000">Prostar Whey 100% - Rs.3000</option>
+      </select>
+      </form>
+          
+          <form>
+      <select class="quan" ng-model="prod2">
+        <option value="Muscle Blaze Gold BCAA - Rs.2000">Muscle Blaze Gold BCAA - Rs.2000</option>
+        <option value="ON Nutrition BCAA - Rs.1800">ON Nutrition BCAA - Rs.1800</option>
+        <option value="Muscle Tech BCAA - Rs.2500">Muscle Tech BCAA - Rs.2500 </option>
+        <option value="AsItIs BCAA - Rs.800">AsItIs BCAA - Rs.800</option>
+        <option value="Prostar BCAA 100% - Rs.3000">Prostar BCAA 100% - Rs.3000</option>
+      </select>
+      </form>
+          
+         <form>
+      <select class="quan" ng-model="prod3">
+        <option value="Muscle Blaze Fish Oil - Rs.2000">Muscle Blaze Fish Oil - Rs.2000</option>
+        <option value="ON Nutrition Fish Oil - Rs.1800">ON Nutrition Fish Oil - Rs.1800</option>
+        <option value="Muscle Tech Fish Oil - Rs.2500">Muscle Tech Fish Oil - Rs.2500 </option>
+        <option value="AsItIs Fish Oil - Rs.800">AsItIs Fish Oil - Rs.800</option>
+        <option value="Prostar Fish Oil 100% - Rs.3000">Prostar Fish Oil 100% - Rs.3000</option>
+      </select>
+      </form>
+          
+            <form>
+      <select class="quan" ng-model="prod4">
+        <option value="Muscle Blaze MV - Rs.2000">Muscle Blaze MV - Rs.2000</option>
+        <option value="ON Nutrition MV - Rs.1800">ON Nutrition MV - Rs.1800</option>
+        <option value="Muscle Tech MV - Rs.2500">Muscle Tech MV - Rs.2500 </option>
+        <option value="AsItIs MV - Rs.800">AsItIs MV - Rs.800</option>
+        <option value="Prostar MV  100% - Rs.3000">Prostar MV  100% - Rs.3000</option>
+      </select>
+      </form>
+          
+           <form>
+      <select class="quan" ng-model="prod5">
+        <option value="Muscle Blaze Fat Burner
+       - Rs.2000">Muscle Blaze Fat Burner
+       - Rs.2000</option>
+        <option value="ON Nutrition Fat Burner
+      - Rs.1800">ON Nutrition Fat Burner
+      - Rs.1800</option>
+        <option value="Muscle Tech Fat Burner
+       - Rs.2500">Muscle Tech Fat Burner
+       - Rs.2500 </option>
+        <option value="AsItIs Fat Burner
+       - Rs.800">AsItIs Fat Burner
+       - Rs.800</option>
+        <option value="Prostar Fat Burner 100% - Rs.3000">Prostar Fat Burner 100% - Rs.3000</option>
+      </select>
+      </form>
+          
+          </div>
+          
+            <div class="col-6 col-md-4" ng-model="quantity">
+        <input type="text" ng-model="q1"><br>
+        <input type="text" ng-model="q2"><br>
+        <input type="text" ng-model="q3"><br>
+        <input type="text" ng-model="q4"><br>
+        <input type="text" ng-model="q5"><br>
+          </div>
+         
+        </div><br><br>
+        
+        <h5>Bill Details - Powered by Angular JS</h5><br></br>
+       
+         
+          
+       <div class = "bill">
+         <center><h6>Bill Invoice</h6></center>
+         
+        <div class="row">
+           
+          <div class="col-6">
+            <span>Customer's Name</span><br>
+            <span>Customer's Age</span><br>               <span>Customer's Mobile Number</span><br>
+            <span>Customer's Email ID</span><br>
+            <span>Customer's Address</span><br>
+          </div>
+           
+          <div class="col-6">
+       
+              {{name}}<br>
+              {{age}}<br>
+              {{mobno}}<br>
+              {{emailid}}<br>
+              {{address}}<br>
+         
+          </div>
+      </div>
+         
+         
+         <br><br>
+         
+        <div class="row">
+          
+        <div class="col-6 col-md-4">
+          <h6>Product</h6><br>
+          <ul>
+          <li>{{prod1}}</li><br>
+          <li>{{prod2}}</li><br>
+          <li>{{prod3}}</li><br>
+          <li>{{prod4}}</li><br>
+          <li>{{prod5}}</li><br>
+            <ul>
+          </div>
+        
+          <div class="col-6 col-md-4"><h6>Quantity</h6><br>
+            
+            <ul style="list-style-type:none;">
+          <li>{{q1}}</li><br>
+          <li>{{q2}}</li><br>
+          <li>{{q3}}</li><br>
+          <li>{{q4}}</li><br>
+          <li>{{q5}}</li><br>
+            <ul>
+          </div>
+          
+        <div class="col-6 col-md-4">
+          <h6>Price</h6><br>
+          
+          </div>
+          
+              
+              <div class="msg">Thank You for Coming! <br> You have to pay Rs.</div>
+      </div>
+         
+      
+      
+          </div>   
+        
+        </div>
+      </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
